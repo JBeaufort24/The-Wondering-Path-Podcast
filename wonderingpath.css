@@ -355,7 +355,7 @@ article.podcast-card{
   gap: 40px;
   height: 90vh;
   margin: 10px 20px;
-  background-color: var(--dark-background);
+  background-color: var(--black-color);
   box-shadow: 1px 1px 5px var(--first-color);
 }
 
