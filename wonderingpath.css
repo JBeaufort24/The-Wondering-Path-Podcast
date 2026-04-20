@@ -343,10 +343,50 @@ button.episode-link:hover{
 }
 
 button.episode-link a{
-  color: var(--background-color);
+  color: var(--dark-background);
 }
 
 /*The Circle Section*/
+article.podcast-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  height: 90vh;
+  margin: 10px 20px;
+  background-color: var(--dark-background);
+  box-shadow: 1px 1px 10px var(--first-color);
+}
+
+article.podcast-card p{
+  color:var(--white-color);
+}
+
+.host-name{
+  color: var(--white-color);
+  line-height: 60px;
+  font: var(--header-font);
+}
+
+.host-name span{
+  color: var(--first-color);
+  font: var(--body-font);
+  font-size: 16px;
+}
+
+.platform-icons{
+  display: flex;
+  gap: 10px;
+}
+
+a.podcast-icon{
+  color: var(--first-color-alt);
+}
+
+a.podcast-icon:hover{
+  color: var(--second-color-alt);
+}
 
 /*Grimore Setion*/
 
