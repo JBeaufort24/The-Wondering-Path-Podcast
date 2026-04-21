@@ -400,6 +400,7 @@ p.grimore-text{
 
 .grimore-text-list li{
   color: var(--second-color-alt);
+  padding: 5px 0;
 }
 
 /*Footer*/
@@ -423,6 +424,7 @@ p.grimore-text{
 .footer-text{
   color: var(--first-color-alt);
   padding: 25px 10px;
+  font-size: .8em;
 }
 
 .beaufort-digital-production{
