@@ -73,6 +73,12 @@ img{
   height: auto;
 }
 
+span{
+  color: var(--first-color);
+  font: var(--body-font);
+  font-weight: 700;
+}
+
 /*Header*/
 .header {
   position: fixed;
@@ -369,15 +375,9 @@ article.podcast-card p{
   font: var(--header-font);
 }
 
-.host-name span{
-  color: var(--first-color);
-  font: var(--body-font);
-  font-size: 16px;
-}
-
 .platform-icons{
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 
 a.podcast-icon{
@@ -389,4 +389,46 @@ a.podcast-icon:hover{
 }
 
 /*Grimore Setion*/
+p.grimore-text{
+  color: var(--second-color);
+  padding: 10px 20px;
+}
 
+.grimore-text-list{
+  padding-left: 10%;
+}
+
+.grimore-text-list li{
+  color: var(--second-color-alt);
+}
+
+/*Footer*/
+.footer-ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 10px;
+}
+
+.footer-li a{
+  color: var(--second-color);
+}
+
+.footer-li a:hover{
+  color: var(--second-color-alt);
+}
+
+.footer-text{
+  color: var(--first-color-alt);
+  padding: 25px 10px;
+}
+
+.beaufort-digital-production{
+  color: red;
+}
+
+.beaufort-digital-production:hover {
+  color: orangered;
+}
