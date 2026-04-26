@@ -136,7 +136,7 @@ h4{
 }
 
 .nav-toggle{
-  color: var(--white-color);
+  color: var(--black-color);
   font-size: 1.5rem;
   cursor: pointer;
   transition: color .4s;
@@ -149,9 +149,9 @@ h4{
     position: fixed;
     top: 0;
     right: -120%;
-    background-color: var(--dark-background);
+    background-color: var(--second-color-alt);
     width: 50%;
-    height: 50%;
+    height: 30%;
     box-shadow: -8px 0 16px hsla(0, 0%, 0%, .15);
     padding: 3.5em 1em 1em 1em;
     z-index: 100;
@@ -159,7 +159,7 @@ h4{
   }
   
   button.nav-toggle{
-    color:var(--grey-color);
+    color:var(--second-color);
   }
 
 .nav-list{
@@ -169,7 +169,7 @@ h4{
 }
 
 .nav-link{
-  color: var(--first-color-alt);
+  color: var(--dark-background);
   font-weight: 300;
   transition: color 8s;
 }
@@ -253,6 +253,7 @@ p.introduction{
   justify-content: center;
   align-items: center;
   gap: 10px;
+  padding-top: 2em;
 }
 
 .button-section button {
@@ -261,6 +262,7 @@ p.introduction{
   margin-bottom: 5px;
   border-radius: 1em;
   font-weight: 600;
+  width: 200px;
 }
 
 .button-section .active{
@@ -288,12 +290,12 @@ h3.episode-subtext{
 
 .episode-grid{
   display: grid;
-  grid-template-columns: 50% 50%;
-  padding: 10px;
+  grid-template-columns: 33% 33% 33%;
+  gap: 10px;
 }
 
 .episode-card{
-  max-width: 200px;
+  max-width: 300px;
   background-color: var(--dark-background);
   padding: 10px;
   box-shadow: 5px 5px 10px;
@@ -359,7 +361,7 @@ article.podcast-card{
   justify-content: center;
   align-items: center;
   gap: 40px;
-  height: 90vh;
+  height: 60vh;
   margin: 10px 20px;
   background-color: var(--black-color);
   box-shadow: 1px 1px 5px var(--first-color);
@@ -433,4 +435,41 @@ p.grimore-text{
 
 .beaufort-digital-production:hover {
   color: orangered;
+}
+
+/*Media Queries*/
+/*Small Screens*/
+@media only screen and (max-width: 480px){
+  .episode-grid{
+    grid-template-columns: 100%;
+    gap: 10px
+  }
+  
+  .episode-card{
+    max-width: 100%;
+  }
+}
+
+/*Large Screens*/
+@media only screen and (min-width: 720px){
+  p.introduction{
+    padding: 10px 100px;
+  }
+  
+  .button-section button{
+    width: 250px;
+  }
+  
+  .episode-grid{
+    grid-template-columns: 33% 33% 33%;
+  }
+  
+  article.podcast-card{
+    height: 100%;
+  }
+  
+  div.large-device-grid{
+    grid-template-columns: 50% 50%;
+    display: grid;
+  }
 }
