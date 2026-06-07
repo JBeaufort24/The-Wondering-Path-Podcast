@@ -290,8 +290,8 @@ h3.episode-subtext{
 
 .episode-grid{
   display: grid;
-  grid-template-columns: 33% 33% 33%;
-  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
 }
 
 .episode-card{
@@ -452,7 +452,7 @@ p.grimore-text{
 
 /*Large Screens*/
 @media only screen and (min-width: 720px){
-  p.introduction{
+    p.introduction{
     padding: 10px 100px;
   }
   
@@ -461,7 +461,7 @@ p.grimore-text{
   }
   
   .episode-grid{
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   
   article.podcast-card{
@@ -469,7 +469,7 @@ p.grimore-text{
   }
   
   div.large-device-grid{
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     display: grid;
   }
 }
